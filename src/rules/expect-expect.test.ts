@@ -45,7 +45,12 @@ describe(RULE_NAME, () => {
 				`const myFunc = () => {};
 				it("works", () => expect(myFunc()).toBe(undefined));`,
 				`const myFunc = () => {};
-				it("works", () => expect(myFunc()).toBe(undefined));`
+				it("works", () => expect(myFunc()).toBe(undefined));`,
+				`if (import.meta.vitest) {
+					test('hello', () => {
+								expect(1).toBe(1);
+					});
+				  }`
 			],
 			invalid: [
 				{
