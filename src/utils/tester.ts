@@ -1,7 +1,10 @@
-import { TSESLint } from '@typescript-eslint/utils'
+import { RuleTester } from '@typescript-eslint/rule-tester'
+import { afterAll, describe, it } from 'vitest'
 
-const ruleTester = new TSESLint.RuleTester({
-	parser: require.resolve('@typescript-eslint/parser')
+RuleTester.afterAll = afterAll
+RuleTester.describe = describe
+RuleTester.it = it
+
+export const ruleTester: RuleTester = new RuleTester({
+    parser: '@typescript-eslint/parser'
 })
-
-export default ruleTester
