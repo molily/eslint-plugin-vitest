@@ -1,5 +1,5 @@
 import { describe, it } from 'vitest'
-import ruleTester from '../utils/tester'
+import { ruleTester } from '../utils/test'
 import rule, { RULE_NAME } from './prefer-to-be-falsy'
 
 const messageId = 'preferToBeFalsy'

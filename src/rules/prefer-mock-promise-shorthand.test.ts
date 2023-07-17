@@ -1,10 +1,10 @@
 import { describe, test } from 'vitest'
-import tester from '../utils/tester'
+import { ruleTester } from '../utils/test'
 import rule, { RULE_NAME } from './prefer-mock-promise-shorthand'
 
 describe(RULE_NAME, () => {
 	test(RULE_NAME, () => {
-		tester.run(RULE_NAME, rule, {
+		ruleTester.run(RULE_NAME, rule, {
 			valid: [
 				'describe()',
 				'it()',

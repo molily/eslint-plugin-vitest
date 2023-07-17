@@ -1,6 +1,6 @@
 import { TSESLint } from '@typescript-eslint/utils'
 import { test, describe } from 'vitest'
-import ruleTester from '../utils/tester'
+import { ruleTester } from '../utils/test'
 import rule, { RULE_NAME } from './prefer-equality-matcher'
 
 type RuleMessages<TRuleModule extends TSESLint.RuleModule<string, unknown[]>> =

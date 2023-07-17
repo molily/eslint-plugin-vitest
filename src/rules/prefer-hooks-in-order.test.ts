@@ -1,5 +1,5 @@
 import { describe, it } from 'vitest'
-import ruleTester from '../utils/tester'
+import { ruleTester } from '../utils/test'
 import rule, { RULE_NAME } from './prefer-hooks-in-order'
 
 describe(RULE_NAME, () => {

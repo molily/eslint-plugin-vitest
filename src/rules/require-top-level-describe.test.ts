@@ -1,5 +1,5 @@
 import { describe, test } from 'vitest'
-import ruleTester from '../utils/tester'
+import { ruleTester } from '../utils/test'
 import rule, { RULE_NAME } from './require-top-level-describe'
 
 describe(RULE_NAME, () => {

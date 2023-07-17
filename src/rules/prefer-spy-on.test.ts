@@ -1,6 +1,6 @@
 import { describe, test } from 'vitest'
 import { AST_NODE_TYPES } from '@typescript-eslint/utils'
-import ruleTester from '../utils/tester'
+import { ruleTester } from '../utils/test'
 import rule, { RULE_NAME } from './prefer-spy-on'
 
 describe(RULE_NAME, () => {

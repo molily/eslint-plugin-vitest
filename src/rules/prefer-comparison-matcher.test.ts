@@ -1,5 +1,5 @@
 import { describe, test } from 'vitest'
-import ruleTester from '../utils/tester'
+import { ruleTester } from '../utils/test'
 import rule, { RULE_NAME } from './prefer-comparison-matcher'
 
 describe(RULE_NAME, () => {
